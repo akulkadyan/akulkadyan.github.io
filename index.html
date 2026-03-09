@@ -1,23 +1,111 @@
 <!DOCTYPE html>
-</style>
-</head>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Akul Kadyan | Portfolio</title>
 
-<body>
+<style>
 
-<header>
-<h2>Akul Kadyan</h2>
-<nav>
-<a href="index.html">Home</a>
-<a href="programming.html">Programming</a>
-<a href="arduino.html">Arduino</a>
-<a href="integrated.html">Integrated</a>
-<a href="#contact">Contact</a>
-</nav>
-</header>
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f5f7fa;
+    color:#333;
+}
 
-<section class="hero">
+/* Sticky navigation bar */
+header{
+    background:#111827;
+    color:white;
+    padding:18px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:500;
+}
+
+nav a:hover{
+    opacity:.8;
+}
+
+/* Hero section */
+.hero{
+    padding:100px 40px;
+    text-align:center;
+    background:white;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:18px;
+    color:#555;
+    max-width:700px;
+    margin:auto;
+}
+
+/* Section layout */
+.section{
+    padding:70px 40px;
+    max-width:1100px;
+    margin:auto;
+}
+
+.section h2{
+    margin-bottom:40px;
+    text-align:center;
+}
+
+/* Category cards */
+.category-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.category-card{
+    background:white;
+    padding:35px;
+    border-radius:12px;
+    box-shadow:0 8px 22px rgba(0,0,0,0.08);
+    text-align:center;
+    transition:transform .2s ease, box-shadow .2s ease;
+}
+
+.category-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 14px 30px rgba(0,0,0,0.12);
+}
+
+.category-card h3{
+    margin-top:0;
+}
+
+.category-card a{
+    display:inline-block;
+    margin-top:15px;
+    text-decoration:none;
+    font-weight:bold;
+    color:#2563eb;
+}
+/* Featured project cards */
 <h1>Computer Engineering Student</h1>
-<p>Interested in software development, embedded systems, and integrated hardware systems.</p>
+<p>
+Focused on software development, embedded systems, and hardware‑software integration. I enjoy building practical engineering solutions and experimenting with robotics and electronics.
+</p>
 </section>
 
 <section class="section">
@@ -27,20 +115,65 @@
 
 <div class="category-card">
 <h3>Programming Projects</h3>
-<p>C++, Java, MATLAB, and software-focused engineering work.</p>
-<a href="programming.html">View Projects</a>
+<p>C++, Java, MATLAB, and algorithm-focused engineering work.</p>
+<a href="programming.html">Explore Projects →</a>
 </div>
 
 <div class="category-card">
 <h3>Arduino Projects</h3>
-<p>Microcontroller, sensors, and embedded electronics projects.</p>
-<a href="arduino.html">View Projects</a>
+<p>Microcontrollers, sensors, and embedded electronics systems.</p>
+<a href="arduino.html">Explore Projects →</a>
 </div>
 
 <div class="category-card">
 <h3>Integrated Systems</h3>
-<p>Projects combining software, electronics, and hardware control.</p>
-<a href="integrated.html">View Projects</a>
+<p>Projects combining hardware, electronics, and software control.</p>
+<a href="integrated.html">Explore Projects →</a>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+<h2>Featured Projects</h2>
+
+<div class="projects">
+
+<div class="project-card">
+<div class="project-content">
+<h3>Autonomous Robot</h3>
+<p>A robot capable of obstacle detection and navigation using sensors and motor control.</p>
+<div class="tech-stack">C++ • Arduino • Ultrasonic Sensors</div>
+<div class="project-links">
+<a href="#">GitHub</a>
+<a href="#">Details</a>
+</div>
+</div>
+</div>
+
+<div class="project-card">
+<div class="project-content">
+<h3>MATLAB Control Simulation</h3>
+<p>Simulation analyzing system responses and control stability for engineering models.</p>
+<div class="tech-stack">MATLAB • Control Systems</div>
+<div class="project-links">
+<a href="#">GitHub</a>
+<a href="#">Details</a>
+</div>
+</div>
+</div>
+
+<div class="project-card">
+<div class="project-content">
+<h3>Java Authentication System</h3>
+<p>A secure login system demonstrating authentication and user management.</p>
+<div class="tech-stack">Java • OOP • GUI</div>
+<div class="project-links">
+<a href="#">GitHub</a>
+<a href="#">Details</a>
+</div>
+</div>
 </div>
 
 </div>
