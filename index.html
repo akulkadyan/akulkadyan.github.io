@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Akul Kadyan | Portfolio</title>
+<title>Ask Singh | Portfolio</title>
 <style>
 
 body{
@@ -51,12 +51,18 @@ nav a:hover{
 
 .section{
     padding:60px 40px;
-    max-width:1000px;
+    max-width:1100px;
     margin:auto;
 }
 
 .section h2{
     margin-bottom:30px;
+}
+
+.category-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
 }
 
 .projects{
@@ -81,6 +87,19 @@ nav a:hover{
     font-weight:bold;
 }
 
+.category-card{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    text-align:center;
+}
+
+.category-card a{
+    text-decoration:none;
+    font-weight:bold;
+}
+
 footer{
     text-align:center;
     padding:30px;
@@ -96,6 +115,7 @@ footer{
 <header>
 <h2>Ask Singh</h2>
 <nav>
+<a href="#">Home</a>
 <a href="#about">About</a>
 <a href="#projects">Projects</a>
 <a href="#contact">Contact</a>
@@ -115,25 +135,88 @@ I am a computer engineering student with experience in C++, Java, MATLAB, and em
 </section>
 
 <section id="projects" class="section">
-<h2>Projects</h2>
+<h2>Project Categories</h2>
+
+<div class="category-grid">
+
+<div class="category-card">
+<h3>Programming Projects</h3>
+<p>Software development projects including C++, Java, and MATLAB.</p>
+<a href="#programming">View Projects</a>
+</div>
+
+<div class="category-card">
+<h3>Arduino Projects</h3>
+<p>Microcontroller and electronics-based systems using Arduino.</p>
+<a href="#arduino">View Projects</a>
+</div>
+
+<div class="category-card">
+<h3>Integrated Systems</h3>
+<p>Projects combining hardware, electronics, and software.</p>
+<a href="#integrated">View Projects</a>
+</div>
+
+</div>
+
+</section>
+
+<section id="programming" class="section">
+<h2>Programming Projects</h2>
 
 <div class="projects">
 
 <div class="card">
 <h3>Project Name</h3>
-<p>Short description of the project and what it does.</p>
+<p>Short description of your software project.</p>
 <a href="#">View Code</a>
 </div>
 
 <div class="card">
 <h3>Project Name</h3>
-<p>Short description of the project and what technologies were used.</p>
+<p>Explain what problem the program solves.</p>
+<a href="#">View Code</a>
+</div>
+
+</div>
+
+</section>
+
+<section id="arduino" class="section">
+<h2>Arduino Projects</h2>
+
+<div class="projects">
+
+<div class="card">
+<h3>Arduino Project</h3>
+<p>Example: Sensor monitoring system using Arduino.</p>
 <a href="#">View Code</a>
 </div>
 
 <div class="card">
-<h3>Project Name</h3>
-<p>Explain the engineering problem the project solves.</p>
+<h3>Arduino Project</h3>
+<p>Example: Motor control or robotics project.</p>
+<a href="#">View Code</a>
+</div>
+
+</div>
+
+</section>
+
+<section id="integrated" class="section">
+<h2>Integrated Systems Projects</h2>
+
+<div class="projects">
+
+<div class="card">
+<h3>Integrated Project</h3>
+<p>Hardware + software system such as a robot or IoT device.</p>
+<a href="#">View Code</a>
+</div>
+
+<div class="card">
+<h3>Integrated Project</h3>
+<p>Example: Embedded system with sensors and data processing.</p>
 <a href="#">View Code</a>
 </div>
 
@@ -143,9 +226,9 @@ I am a computer engineering student with experience in C++, Java, MATLAB, and em
 
 <section id="contact" class="section">
 <h2>Contact</h2>
-<p>Email: Akulkadyan@gmail.com</p>
-<p>GitHub: github.com/akulkadyan</p>
-<p>LinkedIn: linkedin.com/in/akul-kadyan-8612b133b</p>
+<p>Email: your.email@example.com</p>
+<p>GitHub: github.com/yourusername</p>
+<p>LinkedIn: linkedin.com/in/yourname</p>
 </section>
 
 <footer>
