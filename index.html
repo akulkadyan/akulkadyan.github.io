@@ -3,264 +3,60 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Akul Kadyan | Portfolio</title>
 
-<style>
+<title>Akul Kadyan Portfolio</title>
 
-body{
-    margin:0;
-    font-family: Arial, Helvetica, sans-serif;
-    background:#f5f7fa;
-    color:#333;
-}
-
-/* Sticky navigation bar */
-header{
-    background:#111827;
-    color:white;
-    padding:18px 40px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    position:sticky;
-    top:0;
-    z-index:1000;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:25px;
-    font-weight:500;
-}
-
-nav a:hover{
-    opacity:.8;
-}
-
-/* Hero section */
-.hero{
-    padding:100px 40px;
-    text-align:center;
-    background:white;
-}
-
-.hero h1{
-    font-size:48px;
-    margin-bottom:10px;
-}
-
-.hero p{
-    font-size:18px;
-    color:#555;
-    max-width:700px;
-    margin:auto;
-}
-
-/* Section layout */
-.section{
-    padding:70px 40px;
-    max-width:1100px;
-    margin:auto;
-}
-
-.section h2{
-    margin-bottom:40px;
-    text-align:center;
-}
-
-/* Category cards */
-.category-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:30px;
-}
-
-.category-card{
-    background:white;
-    padding:35px;
-    border-radius:12px;
-    box-shadow:0 8px 22px rgba(0,0,0,0.08);
-    text-align:center;
-    transition:transform .2s ease, box-shadow .2s ease;
-}
-
-.category-card:hover{
-    transform:translateY(-6px);
-    box-shadow:0 14px 30px rgba(0,0,0,0.12);
-}
-
-.category-card h3{
-    margin-top:0;
-}
-
-.category-card a{
-    display:inline-block;
-    margin-top:15px;
-    text-decoration:none;
-    font-weight:bold;
-    color:#2563eb;
-}
-
-/* Project cards */
-
-.projects{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:30px;
-}
-
-.project-card{
-    background:white;
-    border-radius:12px;
-    box-shadow:0 8px 22px rgba(0,0,0,0.08);
-    transition:transform .2s ease, box-shadow .2s ease;
-}
-
-.project-card:hover{
-    transform:translateY(-6px);
-    box-shadow:0 14px 30px rgba(0,0,0,0.12);
-}
-
-.project-content{
-    padding:25px;
-}
-
-.project-content h3{
-    margin-top:0;
-}
-
-.tech-stack{
-    font-size:14px;
-    color:#777;
-    margin-top:10px;
-}
-
-.project-links{
-    margin-top:15px;
-}
-
-.project-links a{
-    text-decoration:none;
-    margin-right:15px;
-    font-weight:bold;
-    color:#2563eb;
-}
-
-/* Footer */
-
-footer{
-    text-align:center;
-    padding:35px;
-    background:#111827;
-    color:white;
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
 <h2>Akul Kadyan</h2>
+
 <nav>
 <a href="index.html">Home</a>
 <a href="programming.html">Programming</a>
 <a href="arduino.html">Arduino</a>
 <a href="integrated.html">Integrated</a>
-<a href="#contact">Contact</a>
 </nav>
 </header>
 
 <section class="hero">
-<h1>Computer Engineering Student</h1>
-<p>
-Focused on software development, embedded systems, and hardware-software integration. I enjoy building practical engineering solutions and experimenting with robotics and electronics.
-</p>
+<h1>Computer Engineering Portfolio</h1>
+<p>Projects in software development, embedded systems, and integrated engineering solutions.</p>
 </section>
 
 <section class="section">
+
 <h2>Project Categories</h2>
 
 <div class="category-grid">
 
 <div class="category-card">
+<a href="programming.html">
 <h3>Programming Projects</h3>
-<p>C++, Java, MATLAB, and algorithm-focused engineering work.</p>
-<a href="programming.html">Explore Projects →</a>
+<p>Software development and algorithms.</p>
+</a>
 </div>
 
 <div class="category-card">
+<a href="arduino.html">
 <h3>Arduino Projects</h3>
-<p>Microcontrollers, sensors, and embedded electronics systems.</p>
-<a href="arduino.html">Explore Projects →</a>
+<p>Microcontroller systems and hardware control.</p>
+</a>
 </div>
 
 <div class="category-card">
+<a href="integrated.html">
 <h3>Integrated Systems</h3>
-<p>Projects combining hardware, electronics, and software control.</p>
-<a href="integrated.html">Explore Projects →</a>
+<p>Projects combining hardware and software.</p>
+</a>
 </div>
 
 </div>
 
 </section>
-
-<section class="section">
-<h2>Featured Projects</h2>
-
-<div class="projects">
-
-<div class="project-card">
-<div class="project-content">
-<h3>Autonomous Robot</h3>
-<p>A robot capable of obstacle detection and navigation using sensors and motor control.</p>
-<div class="tech-stack">C++ • Arduino • Ultrasonic Sensors</div>
-<div class="project-links">
-<a href="#">GitHub</a>
-<a href="#">Details</a>
-</div>
-</div>
-</div>
-
-<div class="project-card">
-<div class="project-content">
-<h3>MATLAB Control Simulation</h3>
-<p>Simulation analyzing system responses and control stability.</p>
-<div class="tech-stack">MATLAB • Control Systems</div>
-<div class="project-links">
-<a href="#">GitHub</a>
-<a href="#">Details</a>
-</div>
-</div>
-</div>
-
-<div class="project-card">
-<div class="project-content">
-<h3>Java Authentication System</h3>
-<p>A secure login system demonstrating authentication and user management.</p>
-<div class="tech-stack">Java • OOP • GUI</div>
-<div class="project-links">
-<a href="#">GitHub</a>
-<a href="#">Details</a>
-</div>
-</div>
-</div>
-
-</div>
-
-</section>
-
-<section id="contact" class="section">
-<h2>Contact</h2>
-<p>Email: akulkadyan@gmail.com</p>
-<p>GitHub: github.com/akulkadyan</p>
-<p>LinkedIn: linkedin.com/in/akul-kadyan-8612b133b</p>
-</section>
-
-<footer>
-<p>© 2026 Akul Kadyan</p>
-</footer>
 
 </body>
 </html>
