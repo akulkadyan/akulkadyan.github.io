@@ -192,32 +192,52 @@ nav a:hover{
     margin-bottom:35px;
 }
 
-/* Contact items */
+/* Contact section */
 
-.contact-list{
+.contact-section{
+    padding:80px 20px;
+    text-align:center;
+    background:#f5f7fa;
+}
+
+.contact-section h2{
+    margin-bottom:25px;
+}
+
+.contact-links{
     display:flex;
     justify-content:center;
-    gap:40px;
+    gap:30px;
     flex-wrap:wrap;
+    margin-bottom:25px;
 }
 
-.contact-item{
-    display:flex;
-    align-items:center;
-    gap:10px;
-}
-
-.contact-item i{
-    font-size:18px;
+.contact-links a{
+    text-decoration:none;
+    font-weight:600;
     color:#2563eb;
 }
 
-.contact-item a{
+.contact-links a:hover{
+    text-decoration:underline;
+}
+
+.contact-links i{
+    margin-right:6px;
+}
+
+/* Resume button */
+
+.resume-button{
+    display:inline-block;
+    padding:10px 18px;
+    background:#2563eb;
+    color:white;
     text-decoration:none;
-    color:#333;
+    border-radius:6px;
     font-weight:600;
 }
 
-.contact-item a:hover{
-    color:#2563eb;
+.resume-button:hover{
+    background:#1e4fd8;
 }
