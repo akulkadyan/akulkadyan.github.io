@@ -229,8 +229,8 @@ nav a:hover{
 /* Project images */
 
 .project-image{
-    width:10%;
-    height:18px;
+    width:50%;
+    height:90px;
     object-fit:cover;
     border-top-left-radius:12px;
     border-top-right-radius:12px;
