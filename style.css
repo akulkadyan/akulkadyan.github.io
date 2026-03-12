@@ -231,12 +231,13 @@ nav a:hover{
 
 .project-image{
     width:100%;
-    height:auto;
-    max-height:180px;
+    height:160px;
     object-fit:contain;
     background:#f5f7fa;
-    transition:transform .35s ease;
+    transition:transform 0.35s ease;
 }
+
+/* Hover effects */
 
 .project-card:hover{
     transform:translateY(-6px);
