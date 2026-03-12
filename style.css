@@ -238,3 +238,7 @@ nav a:hover{
 .project-card:hover .project-image{
     transform:scale(1.08);
 }
+.project-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 14px 30px rgba(0,0,0,0.12);
+}
