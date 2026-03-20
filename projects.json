@@ -27,5 +27,15 @@
     "image": "images/CS2334 Research Poster.png",
     "category": "programming",
     "featured": true
+  },
+
+  {
+    "title": "Mini Social Media Message System",
+    "description": "Project where I created a mini social media system which can do various operations such as adding and deleting posts as well as searching for hashtags.",
+    "tech": "C++ • OOP • Data Structures",
+    "github": "https://github.com/akulkadyan/Mini-Social-Media-Message-System.git",
+    "image": "images/MSMS.png",
+    "category": "programming",
+    "featured": false
   }
 ]
