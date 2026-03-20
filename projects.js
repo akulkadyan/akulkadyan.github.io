@@ -1,32 +1,26 @@
-fetch('projects.json)
-    .then(response => response.json())
+function loadProjects(category)
+{
+  fetch('projects.json')
+    .then(res => res.json())
     .then(data => {
-    const container = document.getElementById('project-container');
+      const container = document.getElementById('project-container');
 
-    data.forEach(project => {
-      const card = `
-        <div class="project-card">
-
-          <img src="${project.image}" class="project-image">
-
-          <div class="project-content">
-
-            <h3>${project.title}</h3>
-
-            <p>${project.description}</p>
-
-            <div class="tech-stack">${project.tech}</div>
-
-            <div class="project-links">
-              <a href="${project.github}" target="_blank">
-                GitHub
-              </a>
+      data
+        .filter(p => p.category === category)
+        .forEach(p => {
+          container.innerHTML += `
+            <div class="project-card">
+              <img src="${p.image}" class="project-image">
+              <div class="project-content">
+                <h3>${p.title}</h3>
+                <p>${p.description}</p>
+                <div class="tech-stack">${p.tech}</div>
+                <div class="project-links">
+                  <a href="${p.github}" target="_blank">GitHub</a>
+                </div>
+              </div>
             </div>
-
-          </div>
-        </div>
-      `;
-
-      container.innerHTML += card;
+          `;
+        });
     });
-  });
+}
