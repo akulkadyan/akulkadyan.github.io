@@ -1,1 +1,20 @@
-
+[
+  {
+    "title": "Sorting Visualizer",
+    "description": "Visualizes sorting algorithms step-by-step.",
+    "tech": "JavaScript • Algorithms",
+    "github": "https://github.com/yourusername/sorting",
+    "image": "images/sorting.png",
+    "category": "programming",
+    "featured": true
+  },
+  {
+    "title": "Smart Plant System",
+    "description": "Automated watering system using sensors.",
+    "tech": "Arduino • Sensors",
+    "github": "https://github.com/yourusername/plant",
+    "image": "images/plant.png",
+    "category": "arduino",
+    "featured": false
+  }
+]
