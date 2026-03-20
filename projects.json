@@ -5,18 +5,8 @@
     "tech": "JavaScript • Algorithms",
     "github": "https://github.com/yourusername/sorting",
     "image": "images/sorting.png",
-    "category": "programming",
+    "category": "arduino",
     "featured": true
-  },
-  
-  {
-    "title": "Smart Plant System",
-    "description": "Automated watering system using sensors.",
-    "tech": "Arduino • Sensors",
-    "github": "https://github.com/yourusername/plant",
-    "image": "images/plant.png",
-    "category": "programming",
-    "featured": false
   },
 
   {
@@ -37,5 +27,16 @@
     "image": "images/MSMS.png",
     "category": "programming",
     "featured": false
+  },
+  
+  {
+    "title": "Smart Plant System",
+    "description": "Automated watering system using sensors.",
+    "tech": "Arduino • Sensors",
+    "github": "https://github.com/yourusername/plant",
+    "image": "images/plant.png",
+    "category": "programming",
+    "featured": false
   }
+  
 ]
