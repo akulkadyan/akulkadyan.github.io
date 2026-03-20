@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
@@ -8,6 +9,7 @@
 <title>Programming Projects</title>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <link rel="stylesheet" href="style.css">
 
 </head>
@@ -15,6 +17,7 @@
 <body>
 
 <header>
+
 <h2>Akul Kadyan</h2>
 
 <nav>
@@ -23,76 +26,81 @@
 <a href="arduino.html">Arduino</a>
 <a href="integrated.html">Integrated</a>
 </nav>
+
 </header>
 
+
+<!-- Page Header -->
+
 <section class="page-header">
+
 <h1>Programming Projects</h1>
-<p>Software development and computer science projects.</p>
+
+<p>
+Software development projects focused on algorithms, data structures,
+and application design.
+</p>
+
 </section>
+
+
+<!-- Projects Section -->
 
 <section class="section">
 
-  <div class = "project" id="project-container"></div>
-  
-  <script src = "projects.js"></script>
-  
-<!-- Project 1 -->
-
-<div class="projects">
-
-<div class="project-card">
-<div class="project-content">
-<img src="images/CS2334 Research Poster.png" class="project-image">
-  
-<h3>Array vs Linkedlist Research Project</h3>
-
-<p>
-Project to test when it is more efficient to use a linkedlist or an array depending on size and operation.
-</p>
-
-<div class="tech-stack">
-Java • Research • Data Structures
-</div>
-
-<div class="project-links">
-<a href="https://github.com/CS-2334-Research/Capstone-Project.git" target="_blank">
-<i class="fa-brands fa-github"></i> GitHub
-</a>
-</div>
-
-</div>
-</div>
-
-<!-- Project 2 -->
-  
-  <div class="projects">
-
-<div class="project-card">
-<div class="project-content">
-<img src="images/MSMS.png" class="project-image">
-  
-<h3>Mini Social Media Message System</h3>
-
-<p>
-Project where I created a mini social media system which can do various operations such as adding and deleting posts as well as searching for hashtags.
-</p>
-
-<div class="tech-stack">
-C++ • OOP • Data Structures
-</div>
-
-<div class="project-links">
-<a href="https://github.com/akulkadyan/Mini-Social-Media-Message-System.git" target="_blank">
-<i class="fa-brands fa-github"></i> GitHub
-</a>
-</div>
-
-</div>
-</div>
-
-</div>
+<div class="projects" id="project-container"></div>
 
 </section>
+
+
+<!-- Script -->
+
+<script>
+
+function loadProjects(category){
+  fetch('projects.json')
+    .then(res => res.json())
+    .then(data => {
+      const container = document.getElementById('project-container');
+
+      container.innerHTML = "";
+      
+      data
+        .filter(p => p.category === category)
+        .forEach(p => {
+
+          const card = `
+            <div class="project-card">
+
+              <img src="${p.image}" class="project-image">
+
+              <div class="project-content">
+
+                <h3>${p.title}</h3>
+
+                <p>${p.description}</p>
+
+                <div class="tech-stack">${p.tech}</div>
+
+                <div class="project-links">
+                  <a href="${p.github}" target="_blank">
+                    <i class="fa-brands fa-github"></i> GitHub
+                  </a>
+                </div>
+
+              </div>
+
+            </div>
+          `;
+
+          container.innerHTML += card;
+        });
+    });
+}
+
+  loadProjects("programming");
+
+</script>
 
 </body>
 </html>
