@@ -8,6 +8,7 @@
     "category": "programming",
     "featured": true
   },
+  
   {
     "title": "Smart Plant System",
     "description": "Automated watering system using sensors.",
@@ -16,5 +17,15 @@
     "image": "images/plant.png",
     "category": "arduino",
     "featured": false
+  },
+
+  {
+    "title": "Array vs Linkedlist Research Project",
+    "description": "Project to test when it is more efficient to use a linkedlist or an array depending on size and operation.",
+    "tech": "Java • Research • Data Structures",
+    "github": "https://github.com/CS-2334-Research/Capstone-Project.git",
+    "image": "images/CS2334 Research Poster.png",
+    "category": "programming",
+    "featured": true
   }
 ]
